@@ -1,0 +1,231 @@
+body {
+	max-width: 540px;
+	min-width: 320px;
+	margin: 0 auto;
+	font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+	color: #000;
+	background: #f2f2f2;
+	overflow-x: hidden;
+    margin: 0 auto;
+	-webkit-tap-highlight-color: transparent;
+}
+  view{
+      box-sizing: border-box;
+  }
+  ul{
+      list-style: none;
+      margin:0;
+      padding: 0;
+  }
+  navigator{
+      text-decoration: none;
+      color: #222;
+  }
+
+
+  /* 搜索界面 */
+  .top-nav{
+    display:flex;
+    background-color: rgb(255,255,255);
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 540px;
+    width:100%;
+    height: 72px;
+}
+  
+  .top-nav .ranking{
+    color:rgb(166,214,62);
+    font-size:8px;
+    width: 47px;
+    height: 45px;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+.top-nav .ranking::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(166,214,62);
+    margin-top: 9px;
+    margin-left: 11px;
+}
+
+  .top-nav .noobintro{
+    color:rgb(166,214,62);
+    font-size:8px;
+    width: 47px;
+    height: 45px;
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+.top-nav .noobintro::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(166,214,62);
+    margin-top: 9px;
+    margin-left: 8px;
+}
+.top-nav .searchbar{
+    position: relative;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid rgb(166,214,62);
+    flex: 1;
+    font-size: 12px;
+    color: #666;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-nav .searchbar::after{
+    position: absolute;
+    font-family: 'icomoon';
+    content: "";
+    color: rgb(166,214,62);
+    top: 1px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+/* 瀑布流 */
+.local-nav{
+    /* 这个flex在实现瀑布流之后可以改掉 */
+    display: flex;
+    width:100%;
+    height:1000px;
+    background-color: rgb(230,250,233);
+}
+
+.local-nav .lnleft{
+    flex: 30;
+    margin-left: 10px;
+    /* background-color: rgb(166,166,166); */
+}
+.local-nav .lnleft view{
+    width:100%;
+    background-color: rgb(166,166,166);
+    margin-bottom: 20px;
+}
+
+.lnleft view:nth-child(1){
+    height: 322px;
+}
+.lnleft view:nth-child(2){
+    height: 91px;
+}
+.lnleft view:nth-child(3){
+    height: 193px;
+}
+.local-nav .lnright{
+    flex: 30;
+    margin-right: 10px;
+}
+.local-nav .lnright view{
+    width:100%;
+    background-color: rgb(166,166,166);
+    margin-bottom: 20px;
+}
+
+.lnright view:nth-child(1){
+    height: 161px;
+}
+.lnright view:nth-child(2){
+    height: 209px;
+}
+.lnright view:nth-child(3){
+    height: 193px;
+}
+.lnright view:nth-child(4){
+    height: 56px;
+}
+.iso{
+    flex: 1;
+}
+  /* .lists {
+    column-count: 2;
+    column-gap: 10rpx;
+  }
+  
+  .item {
+    break-inside: avoid;
+    width: 100%;
+    height: 200rpx;
+    background-color: #eee;
+    line-height: 200rpx;
+    text-align: center;
+    margin-bottom: 10rpx;
+  }
+  
+  .item:nth-child(2n + 1) {
+    height: 240rpx;
+  }
+  
+  .item:nth-child(3n + 1) {
+    height: 320rpx;
+  }
+   */
+
+
+/* 尾部导航栏 */
+.sub-nav{
+    display:flex;
+    position:fixed;
+    bottom:0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 540px;
+    width:100%;
+    height:47px;
+    background-color: #fff;
+}
+
+.sub-nav navigator{
+    flex:1;
+    color: rgb(53,150,67);
+    font-size: 8px;
+    text-align: center;
+}
+.sub-nav navigator:hover{
+    background: rgb(190, 187, 187);
+}
+.sn1::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(53,150,67);
+    margin-top: 10px;
+}
+
+.sn2::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(53,150,67);
+    margin-top: 10px;
+}
+.sn3::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(53,150,67);
+    margin-top: 10px;
+}
+.sn4::before{
+    font-family: 'icomoon';
+    font-size: 14px;
+    content:"";
+    display: block;
+    color: rgb(53,150,67);
+    margin-top: 10px;
+}
